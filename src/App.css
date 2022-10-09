@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navbar-brand .logo{max-width:60px; max-height:60px; width:50px; height:auto;}
