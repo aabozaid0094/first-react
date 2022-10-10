@@ -35,4 +35,7 @@
 }
 
 
+body{font-family: 'Inter', sans-serif;}
 .navbar-brand .logo{max-width:60px; max-height:60px; width:50px; height:auto;}
+main{background-color:#282c34; color:beige;}
+.titlebar{background-color:beige; color:#282c34;}
