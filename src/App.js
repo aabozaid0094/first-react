@@ -1,29 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Header from './Header';
-import logo from './logo.svg';
-import Title from './Title';
-import Content from './Content';
-import Footer from './Footer';
+import Header from './components/Header';
+import ReactHeader from './components/ReactHeader';
+import Title from './components/Title';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReactHeader/>
       <Title title="Home"/>
       <Content/>
       <Footer/>

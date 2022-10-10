@@ -3,11 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "./logo.svg";
+import logo from '../images/logo.svg';
 
 let Header = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className="shadow">
             <Container>
                 <Navbar.Brand href="#home">
                     <img className="logo" src={logo} alt="react-logo" />
