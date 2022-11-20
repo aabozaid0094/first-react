@@ -27,6 +27,11 @@ const Header = (props) => {
                         />
                         <Button variant="outline-success">Search</Button>
                     </Form>
+                    <Form.Check className="p-2 color-schema-switch" type="switch" id="color_schema_switch">
+                        <Form.Check.Label>Light</Form.Check.Label>
+                        <Form.Check.Input className="mx-0" type="checkbox" checked={props.dark_schema} onChange={props.handle_schema} />
+                        <Form.Check.Label>Dark</Form.Check.Label>
+                    </Form.Check>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
