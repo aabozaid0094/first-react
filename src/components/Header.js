@@ -1,13 +1,13 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from '../images/logo.svg';
+import logo from "../images/logo.svg";
 
-let Header = () => {
+const Header = (props) => {
     return (
-        <Navbar bg="light" expand="lg" className="shadow">
+        <Navbar bg={props.dark_schema?"dark":"light"} variant={props.dark_schema?"dark":"light"} expand="lg" className="shadow" sticky="top">
             <Container>
                 <Navbar.Brand href="#home">
                     <img className="logo" src={logo} alt="react-logo" />

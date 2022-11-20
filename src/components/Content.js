@@ -1,9 +1,9 @@
 import logo from '../images/logo.svg';
 import Container from 'react-bootstrap/Container';
 
-let Content = ()=>{
+const Content = (props)=>{
     return(
-        <main id="content">
+        <main className={props.dark_schema?"dark-schema":"light-schema"} id="content">
             <section className='fun-facts py-5'>
                 <Container>
                     <h2>Fun facts about ReactJS</h2>

@@ -1,8 +1,8 @@
 import logo from '../images/logo.svg';
 
-let ReactHeader = () => {
+const ReactHeader = (props) => {
     return (
-        <header className="App-header">
+        <header className={`App-header${props.dark_schema?" dark-schema":" light-schema"}`}>
             <img src={logo} className="App-logo" alt="logo" />
             <p>
                 Edit <code>src/App.js</code> and save to reload.
